@@ -25,7 +25,6 @@ class DB {
 
     findAllDepartments(department) {
         return this.connection.promise().query(`SELECT * FROM department`);
-
     }
 
     createDepartment() {
