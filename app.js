@@ -76,8 +76,8 @@ function mainPrompt() {
 function viewDepartments() {
     DB.findAllDepartments()
     .then(([rows]) => {
-        let employees = rows;
-        console.table(employees);
+        let departments = rows;
+        console.table(departments);
     })
     .then(( )=> mainPrompt())
 }
@@ -85,8 +85,8 @@ function viewDepartments() {
 function viewRoles() {
     DB.findAllRoles()
     .then(([rows]) => {
-        let employees = rows;
-        console.table(employees);
+        let roles = rows;
+        console.table(roles);
     })
     .then(( )=> mainPrompt())
 }
@@ -110,20 +110,33 @@ function newEmployee() {
 }
 
 function employeeRole() {
-    DB.updateEmployeeRole()
-    .then(([rows]) => {
-        let employees = rows;
-        console.table(employees);
+    inquirer.prompt({
+
     })
-    .then(( )=> mainPrompt())
+    DB.updateEmployeeRole()
+    // .then(([rows]) => {
+    //     let employees = rows;
+    //     console.table(employees);
+    // })
+    // .then(( )=> mainPrompt())
 }
 
 function newRole() {
+DB.createRole()
+};
 
-}
+
 
 function newDepartment() {
+    DB.createDepartment()
 
+    // console.log("department created successfully");
+    // mainPrompt()
+    //  .then(([rows]) => {
+    //         let employees =rows;
+    //         console.log("Department successfully added");
+    //     })
+    // .then(( )=> mainPrompt())
 }
 
 
@@ -134,3 +147,5 @@ function newDepartment() {
 
 
 launchApp();
+
+module.exports = {mainPrompt}
