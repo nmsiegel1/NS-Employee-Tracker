@@ -10,6 +10,7 @@ const db = mysql.createConnection(
         database: 'company'
     },
     console.log('Connected to Employee Tracker')
+    
 );
 
 module.exports = db;
