@@ -32,7 +32,7 @@ Asciiart-logo
 
 ## Install
 
-To install dependencies, run "npm i" or "npm install" in the command line. To get access to the database update the username and password in conection.js.
+To install dependencies, run "npm i" or "npm install" in the command line. To get access to the database the uswer must update the username and password in conection.js with thier mysql information to access the app.
 
 ## Notes
 
