@@ -41,6 +41,9 @@ To install dependencies, run "npm i" or "npm install" in the command line. To ge
 * Once you make a selection you are either presented with a table with the relevant information or you are presented with prompts with necessary information to complete your request to update the database. 
 * To confirm your updates, select the option to view the appropriate infomration and you will see your changes have gone into effect. 
 
+## Video
+
+https://watch.screencastify.com/v/vl3YIlClVFt94wSZQHN3
 
 ## Screenshots 
 
